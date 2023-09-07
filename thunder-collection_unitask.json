@@ -1,0 +1,114 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "unitask",
+    "dateExported": "2023-09-07T13:16:00.882Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e9d68ae1-9daf-4726-bf8e-c6dd9517df47",
+            "colId": "56051e3f-2a27-40e8-a023-fb4e714c75d8",
+            "containerId": "",
+            "name": "signup",
+            "url": "http://localhost:3000/user/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-06T08:29:59.938Z",
+            "modified": "2023-09-07T09:34:47.531Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"demouser1\",\n  \"email\": \"demouser@example.com\",\n  \"password\": \"password123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b16ff1e2-e680-41bd-a2a5-c151e60cd537",
+            "colId": "56051e3f-2a27-40e8-a023-fb4e714c75d8",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-06T21:36:37.738Z",
+            "modified": "2023-09-07T09:35:11.025Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInVzZXJuYW1lIjoidGVzdHVzZXIyIiwiaWF0IjoxNjk0MDY3MDA5LCJleHAiOjE2OTQwNzA2MDl9.kfJdfVPqL-zF6FnYcy7l2Zh5lNhkBvUDplm5TCFPFBQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"demouser1\",\n  \"password\": \"password123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "38d1857a-38e8-45f3-9e73-9ed4bb1d5800",
+            "colId": "56051e3f-2a27-40e8-a023-fb4e714c75d8",
+            "containerId": "",
+            "name": "fetchUserByUsername",
+            "url": "http://localhost:3000/user/findUser/demouser1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-09-07T06:10:46.109Z",
+            "modified": "2023-09-07T09:36:20.492Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXJuYW1lIjoiZGVtb3VzZXIxIiwiaWF0IjoxNjk0MDc5MzExLCJleHAiOjE2OTQwODI5MTF9.wolCT59lX2cvOMcoMweXODS73nsZy3a0SFKvIHlcyFA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"demouser1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1b5883e3-c36c-43ec-869c-449ddaa8d7d0",
+            "colId": "56051e3f-2a27-40e8-a023-fb4e714c75d8",
+            "containerId": "",
+            "name": "getProfile",
+            "url": "http://localhost:3000/user/me",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-09-07T07:31:58.509Z",
+            "modified": "2023-09-07T13:08:42.400Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXJuYW1lIjoiZGVtb3VzZXIxIiwiaWF0IjoxNjk0MDkyMDk0LCJleHAiOjE2OTQwOTU2OTR9.1Kk58RqhUEdDll5LGboUEJzWipm2WlvHv3iIYlUd7Bk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2470b3b4-e565-4b08-bf35-ea06fe7f62d9",
+            "colId": "56051e3f-2a27-40e8-a023-fb4e714c75d8",
+            "containerId": "",
+            "name": "random-joke",
+            "url": "http://localhost:3000/jokes/random-joke",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-09-07T08:55:13.653Z",
+            "modified": "2023-09-07T13:08:57.106Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXJuYW1lIjoiZGVtb3VzZXIxIiwiaWF0IjoxNjk0MDkyMDk0LCJleHAiOjE2OTQwOTU2OTR9.1Kk58RqhUEdDll5LGboUEJzWipm2WlvHv3iIYlUd7Bk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
